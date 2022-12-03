@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 Widget centerbackground(double screenwidth) {
@@ -7,11 +9,11 @@ Widget centerbackground(double screenwidth) {
     decoration: const BoxDecoration(
       shape: BoxShape.circle,
       gradient: LinearGradient(
-        begin: Alignment(0.6, -1.1),
+        begin: Alignment(0, -1.1),
         end: Alignment(0.7, 0.8),
         colors: [
-          Color.fromARGB(219, 75, 232, 138),
-          Color(0x005CBdCF),
+          Color.fromARGB(164, 75, 232, 180),
+          Color.fromARGB(188, 92, 180, 207),
         ],
       ),
     ),

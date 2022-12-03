@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pishtaz/screens/log/background/bottombackground.dart';
 import 'package:pishtaz/screens/log/background/centerWidget.dart';
 import 'package:pishtaz/screens/log/background/topbackground.dart';
+import 'package:pishtaz/screens/log/login%20widgets/loginContent.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -24,10 +25,16 @@ class LoginScreen extends StatelessWidget {
             child: bottombackgroun(screensize.width),
           ),
           Positioned(
-            top: 450,
-            left: -300,
+            top: 320,
+            left: -350,
             child: centerbackground(screensize.width),
           ),
+          Positioned(
+            top: 60,
+            left: screensize.width * 0.4,
+            child: Image.asset('assets/images/pishtaz_logo.png'),
+          ),
+          LoginContent(),
         ],
       ),
     );
