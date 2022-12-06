@@ -38,7 +38,7 @@ class _LoginContentState extends State<LoginContent>
         false,
         formkeyEmialLog,
       ),
-      customButton(),
+      customButton('ثبت نام'),
     ];
     createAcounntWidget = [
       inputField(
@@ -59,7 +59,7 @@ class _LoginContentState extends State<LoginContent>
         false,
         formkeyEmialSign,
       ),
-      customButton(),
+      customButton('ورود'),
     ];
     ChangeAnimations.initialze(
       vsync: this,
@@ -80,21 +80,24 @@ class _LoginContentState extends State<LoginContent>
     }
   }
 
-  Widget customButton() {
+  Widget customButton(String title) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 135),
       child: Container(
         width: 60,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
         ),
         child: ElevatedButton(
-          style: ElevatedButton.styleFrom(),
+          style: ElevatedButton.styleFrom(
+            shape: StadiumBorder(),
+          ),
           onPressed: () {},
           child: Text(
-            ChangeAnimations.currentScreen == Screens.createAccount
-                ? 'ثبت نام '
-                : 'ورود',
+            title,
+            style: TextStyle(
+              fontSize: 20,
+            ),
           ),
         ),
       ),
@@ -173,7 +176,7 @@ class _LoginContentState extends State<LoginContent>
     return Stack(
       children: [
         Positioned(
-          bottom: 550,
+          bottom: 570,
           right: 50,
           child: TopText(),
         ), // Center(child: CircularProgressIndicator())
