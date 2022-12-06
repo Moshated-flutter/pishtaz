@@ -33,33 +33,33 @@ class ChangeAnimations {
   }) {
     toptextController = AnimationController(
       vsync: vsync,
-      duration: Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 200),
     );
     toptextAnime = _createAnimtions(
       begin: Offset.zero,
-      end: Offset(2.8, 0),
+      end: const Offset(2.8, 0),
       parent: toptextController!,
     );
     bottomtextController = AnimationController(
       vsync: vsync,
-      duration: Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 200),
     );
     bottomtextAnime = _createAnimtions(
       begin: Offset.zero,
-      end: Offset(0, 1.8),
+      end: const Offset(0, 1.8),
       parent: bottomtextController!,
     );
     for (var i = 0; createAccountItem > i; i++) {
       createAccountController.add(
         AnimationController(
           vsync: vsync,
-          duration: Duration(milliseconds: 200),
+          duration: const Duration(milliseconds: 200),
         ),
       );
       createAccuontAnime.add(
         _createAnimtions(
           begin: Offset.zero,
-          end: Offset(1, 0),
+          end: const Offset(1, 0),
           parent: createAccountController[i],
         ),
       );
@@ -68,12 +68,12 @@ class ChangeAnimations {
       loginController.add(
         AnimationController(
           vsync: vsync,
-          duration: Duration(milliseconds: 200),
+          duration: const Duration(milliseconds: 200),
         ),
       );
       loginAnime.add(
         _createAnimtions(
-          begin: Offset(-1, 0),
+          begin: const Offset(-1, 0),
           end: Offset.zero,
           parent: loginController[i],
         ),
@@ -91,7 +91,7 @@ class ChangeAnimations {
     ]) {
       controller.forward();
       await Future.delayed(
-        Duration(
+        const Duration(
           milliseconds: 50,
         ),
       );
@@ -111,7 +111,7 @@ class ChangeAnimations {
     ]) {
       controller.reverse();
       await Future.delayed(
-        Duration(milliseconds: 50),
+        const Duration(milliseconds: 50),
       );
     }
     bottomtextController!.reverse();

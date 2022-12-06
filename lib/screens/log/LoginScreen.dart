@@ -34,7 +34,7 @@ class LoginScreen extends StatelessWidget {
             left: screensize.width * 0.4,
             child: Image.asset('assets/images/pishtaz_logo.png'),
           ),
-          LoginContent(),
+          const LoginContent(),
         ],
       ),
     );
