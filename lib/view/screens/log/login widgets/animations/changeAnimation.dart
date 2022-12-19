@@ -1,5 +1,5 @@
 import 'package:flutter/animation.dart';
-import 'package:pishtaz/screens/log/login%20widgets/loginContent.dart';
+import 'package:pishtaz/view/screens/log/login%20widgets/loginContent.dart';
 
 class ChangeAnimations {
   static var isPlaying = false;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pishtaz/screens/log/background/bottombackground.dart';
-import 'package:pishtaz/screens/log/background/centerWidget.dart';
-import 'package:pishtaz/screens/log/background/topbackground.dart';
-import 'package:pishtaz/screens/log/login%20widgets/loginContent.dart';
+import 'package:pishtaz/view/screens/log/background/bottombackground.dart';
+import 'package:pishtaz/view/screens/log/background/centerWidget.dart';
+import 'package:pishtaz/view/screens/log/background/topbackground.dart';
+import 'package:pishtaz/view/screens/log/login%20widgets/loginContent.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

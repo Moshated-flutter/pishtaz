@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pishtaz/screens/log/login%20widgets/animations/changeAnimation.dart';
-import 'package:pishtaz/screens/log/login%20widgets/animations/helper_funtions.dart';
-import 'package:pishtaz/screens/log/login%20widgets/texts/bottomText.dart';
-import 'package:pishtaz/screens/log/login%20widgets/texts/topText.dart';
+import 'package:pishtaz/view/screens/log/login%20widgets/animations/changeAnimation.dart';
+import 'package:pishtaz/view/screens/log/login%20widgets/animations/helper_funtions.dart';
+import 'package:pishtaz/view/screens/log/login%20widgets/texts/bottomText.dart';
+import 'package:pishtaz/view/screens/log/login%20widgets/texts/topText.dart';
 
 enum Screens {
   createAccount,
